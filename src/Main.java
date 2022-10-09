@@ -8,6 +8,25 @@ public class Main {
         rosneftBook.addNewEmployee("Жданова Юлия Александровна", 1, 11000);
         rosneftBook.addNewEmployee("Маркина Виктория Петровна", 4, 120000);
         rosneftBook.printEmployeesByDepartments();
+        rosneftBook.printEmployees();
+        rosneftBook.expenses();
+        rosneftBook.minSalary();
+        rosneftBook.maxSalary();
+        rosneftBook.averageSalary();
+        rosneftBook.printNameEmployees();
+        rosneftBook.printIndexSalary();
+        rosneftBook.findEmpWithMinSalary(4);
+        rosneftBook.findEmpWithMaxSalary(4);
+        rosneftBook.sumSalaryDepartment(4);
+        System.out.println(rosneftBook.averageSumSalaryDepartment(3));
+        rosneftBook.indexSalary(5, 4);
+        rosneftBook.printNameSalaryDepartment(4);
+        rosneftBook.findEmpSalaryMoreThan(16000);
+        rosneftBook.findEmpSalaryLessThan (15000);
+        rosneftBook.removeEmployee("Громов Роман Витальевич");
+        rosneftBook.changeSalaryEmployee("Исаков Константин Анатольевич", 25000);
+        rosneftBook.changeDepartmentEmployee("Исаков Константин Анатольевич", 4);
+
 
 
 

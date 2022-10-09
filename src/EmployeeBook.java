@@ -1,5 +1,5 @@
 public class EmployeeBook {
-    private final Employee[] employees;
+    private final Employee [] employees;
 
     public EmployeeBook(int size) {
         this.employees = new Employee[size];
@@ -114,15 +114,17 @@ public class EmployeeBook {
     public double averageSumSalaryDepartment(int department) {
         double averageSumSalary = 0;
         int l = 0;
+        int k = 1;
         double sumSalary = 0;
 
         for (int i = 0; i < employees.length; i++) {
             if (employees[i] != null && employees[i].getDepartment() == department) {
                 sumSalary = sumSalary + employees[i].getSalary();
                 l = l + 1;
+                averageSumSalary = sumSalaryDepartment(department) / l;
             }
 
-            averageSumSalary = sumSalaryDepartment(department) / l;
+
 
         }
         return averageSumSalary;
